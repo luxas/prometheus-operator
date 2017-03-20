@@ -26,7 +26,7 @@ format:
 check-license:
 	./scripts/check_license.sh
 
-container:
+container: build
 	docker build -t $(REPO):$(TAG) .
 
 e2e-test:
